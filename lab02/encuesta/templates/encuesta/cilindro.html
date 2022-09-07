@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculó del Volumen de un Cilindro</h2>
+    <form action="{% url 'encuesta:respuesta_cilindro' %}" method="post">
+        {% csrf_token %}
+        Introduzca el diametro en metros:
+        <input type="text" name="num1" maxlength="50"><br>
+        Introduzca la altura en metros:
+        <input type="text" name="num2" maxlength="50"><br> 
+        <input type="submit" name="submit" value="Calcular">
+    </form>
+</body>
+</html>
